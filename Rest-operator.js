@@ -9,11 +9,3 @@ restEx2();
 restEx2(1);
 restEx2(1, 2, 3);
 restEx2(1, 2, 3, 4, 5);
-
-const newArray = [1, 2, 3];
-console.log("newArray", newArray);
-console.log("...newArray", ...newArray);
-
-const newStr = "Riyaz Pasha";
-console.log("newStr", newStr);
-console.log("...newStr", ...newStr);
