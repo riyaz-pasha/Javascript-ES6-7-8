@@ -17,3 +17,15 @@ console.log("exceptLastNameRestAll", exceptLastNameRestAll);
 
 const { LastName, ...all } = Person;
 console.log("all", all);// all because LastName doesn't exist (LastName !== lastName)
+
+const Employee = {
+    fullName: "Riyaz",
+    role: "Dev",
+    experience: 1,
+}
+const { fullName: fn, role: Role } = Employee;
+// console.log("fullName", fullName); Can access //ReferenceError: fullName is not defined
+console.log("fn", fn);
+
+const { fullName } = Employee;
+console.log("fullName", fullName); //No error declaring full name
